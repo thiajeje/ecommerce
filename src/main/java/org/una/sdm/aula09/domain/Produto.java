@@ -10,11 +10,8 @@ public class Produto {
     private Long id;
 
     private String nome;
-
     private String descricao;
     private Double preco;
-
-    @ManyToOne
 
     public Long getId() {
         return id;
@@ -32,14 +29,6 @@ public class Produto {
         this.nome = nome;
     }
 
-    public Double getPreco() {
-        return preco;
-    }
-
-    public void setPreco(Double preco) {
-        this.preco = preco;
-    }
-
     public String getDescricao() {
         return descricao;
     }
@@ -47,5 +36,12 @@ public class Produto {
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
-}
 
+    public Double getPreco() {
+        return preco;
+    }
+
+    public void setPreco(Double preco) {
+        this.preco = preco;
+    }
+}
