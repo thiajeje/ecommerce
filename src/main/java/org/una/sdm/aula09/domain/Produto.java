@@ -11,6 +11,7 @@ public class Produto {
 
     private String nome;
 
+    private String descricao;
     private Double preco;
 
     @ManyToOne
@@ -37,6 +38,14 @@ public class Produto {
 
     public void setPreco(Double preco) {
         this.preco = preco;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
 }
 
